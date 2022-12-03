@@ -1,0 +1,7 @@
+@import 'variables';
+@import 'mixins';
+
+html,
+body {
+  font-family: $primary-font;
+}
