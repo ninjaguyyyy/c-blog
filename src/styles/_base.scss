@@ -1,7 +1,23 @@
 @import 'variables';
 @import 'mixins';
 
+// Declare fonts
+@font-face {
+  font-family: $brand-logo-font;
+  font-weight: 400;
+  src: url('../assets/fonts/paytone-one/PaytoneOne-Regular.ttf');
+}
+
 html,
 body {
   font-family: $primary-font;
+}
+
+// Backgrounds
+.blue-bg {
+  background: $blue-color;
+}
+
+.white-bg {
+  background: $white-color;
 }
