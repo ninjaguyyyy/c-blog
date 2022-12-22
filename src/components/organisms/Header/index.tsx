@@ -1,4 +1,5 @@
 import BrandLogo from 'components/atoms/BrandLogo';
+import SignInButton from 'components/atoms/SignInButton';
 import SearchArea from 'components/molecules/SearchArea';
 import SocialIconButtons from 'components/molecules/SocialIconButtons';
 
@@ -6,12 +7,11 @@ import './index.scss';
 
 const Header = () => (
   <header>
-    <div className="wrapper header white-bg mt-14 flex justify-between items-center">
+    <div className="wrapper header white-bg mt-14 flex justify-between items-center xs:mt-0">
       <BrandLogo className="grow" />
-      <div className="mr-8">
-        <SearchArea />
-      </div>
-      <SocialIconButtons />
+      <SearchArea className="mr-4 xs:mr-0" />
+      <SignInButton className="mr-8 xs:hidden" />
+      <SocialIconButtons className="xs:hidden" />
     </div>
   </header>
 );
