@@ -18,7 +18,7 @@ export default function SearchArea() {
       <BiSearchAlt size={20} onClick={showModal} className="cursor-pointer" />
 
       <Modal title="Basic Modal" open={isOpenModal} onCancel={hideModal} footer={[]}>
-        <p>Some contents...</p>
+        <p>Some c</p>
         <p>Some contents...</p>
         <p>Some contents...</p>
       </Modal>
