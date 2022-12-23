@@ -11,7 +11,8 @@
     "build-storybook": "build-storybook",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "start": "WATCHPACK_POLLING=true react-scripts start"
   },
   "dependencies": {
     "@loadable/component": "5.15.2",
