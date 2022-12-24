@@ -7,9 +7,6 @@ services:
     ports:
       - 3000:80
     volumes:
-      - type: bind
-        source: .
-        target: /app
-    restart: unless-stopped
-    environment:
-      - CHOKIDAR_USEPOLLING=true
+      - .:/app
+      - /app/node_modules
+      - ./dist:/usr/share/nginx/html

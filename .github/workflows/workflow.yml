@@ -1,8 +1,8 @@
 on:
   push:
-    branches: [master]
+    branches: [test]
   workflow_dispatch:
-    branches: [master]
+    branches: [test]
 
 name: c-blog
 
@@ -21,4 +21,4 @@ jobs:
             cd c-blog/
             git pull
             docker stop $(docker ps -a -q)
-            docker-compose up -d
+            docker-compose up --build
