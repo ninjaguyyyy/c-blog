@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
   app:
@@ -7,6 +7,7 @@ services:
     ports:
       - 3000:80
     volumes:
+      - type: bind
       - .:/app
       - /app/node_modules
     restart: unless-stopped
