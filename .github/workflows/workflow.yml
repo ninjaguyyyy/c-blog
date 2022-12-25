@@ -20,5 +20,5 @@ jobs:
           script: |
             cd c-blog/
             git pull
-            docker stop $(docker ps -a -q)
+            docker compose down
             docker-compose up --build

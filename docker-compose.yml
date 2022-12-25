@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   app:
-    image: c-blog
+    container_name: c-blog
     build: .
     ports:
       - 3000:80
