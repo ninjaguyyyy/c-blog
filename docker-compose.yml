@@ -6,7 +6,3 @@ services:
     build: .
     ports:
       - 3000:80
-    volumes:
-      - .:/app
-      - /app/node_modules
-      - ./dist:/usr/share/nginx/html
