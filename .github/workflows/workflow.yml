@@ -20,5 +20,5 @@ jobs:
           script: |
             cd c-blog/
             git pull --rebase
-            docker compose down
+            docker-compose down
             docker-compose up --build
