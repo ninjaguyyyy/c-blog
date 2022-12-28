@@ -11,7 +11,7 @@ export default function Footer() {
       </p>
       <div className="w-1/3 xs:w-full">
         <SubscribeForm />
-        <Copyright />
+        <Copyright c-blog/>
       </div>
     </div>
   );
